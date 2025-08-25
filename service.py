@@ -1,9 +1,12 @@
 import os
 from datetime import datetime
-from anki_client import send_to_anki
+from anki_client import AnkiClientHandler
 from logger import logger
 
 class ServiceHandler:
+    def __init__(self):
+        self.anki_client = AnkiClientHandler()
+
     def extract_date(self, image: str) -> datetime:
         basename = os.path.splitext(image)[0]
         return datetime.strptime(basename, "%Y-%m-%d_%H-%M")
@@ -29,6 +32,6 @@ class ServiceHandler:
         if all(os.path.exists(img) for img in image_pair):
             logger.info(f"Par encontrado: {image_pair[0]} e {image_pair[1]}")
             front, back = self.rename_images(image_pair)
-            send_to_anki(front, back)
+            self.anki_client.send_to_anki(front, back)
         else:
             logger.warning(f"Nenhum par encontrado para")

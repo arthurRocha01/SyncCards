@@ -1,4 +1,5 @@
-from watcher import start_watcher
+from watcher import Handler
 
 if __name__ == "__main__":
-    start_watcher()
+    app = Handler()
+    app.start_watcher()
