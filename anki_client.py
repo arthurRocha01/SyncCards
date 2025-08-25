@@ -1,62 +1,37 @@
-import requests
 import os
+import base64
+import requests
 
 ANKI_URL = "http://127.0.0.1:8765"
 
-def request(action, **params):
-    """
-    Envia uma requisição para o AnkiConnect.
+class AnkiClientHandler:
+    def request(self, action: str, **params):
+        payload = {"action": action, "version": 6, "params": params}
+        response = requests.post(ANKI_URL, json=payload)
+        response.raise_for_status()
+        return response.json()
 
-    Parâmetros:
-        action (str): Ação a ser executada na API (ex: "addNote", "storeMediaFile").
-        **params: Parâmetros específicos da ação.
+    def _encode_file(self, path: str) -> str:
+        with open(path, "rb") as f:
+            return base64.b64encode(f.read()).decode("utf-8")
 
-    Retorno:
-        dict: Resposta JSON da API do Anki.
-    """
-    return requests.post(
-        ANKI_URL, 
-        json={"action": action, "version": 6, "params": params}
-    ).json()
+    def send_to_anki(self, image_front: str, image_back: str):
+        front_name = os.path.basename(image_front)
+        back_name = os.path.basename(image_back)
 
-def send_to_anki(front, back):
-    """
-    Envia um par de imagens para o Anki e cria um flashcard.
+        for path, name in [(image_front, front_name), (image_back, back_name)]:
+            self.request("storeMediaFile", filename=name, data=self._encode_file(path))
 
-    Padrão esperado de arquivos:
-        - Frente: <nome>_front.ext
-        - Verso:  <nome>_back.ext
+        note = {
+            "deckName": "Default",
+            "modelName": "Basic",
+            "fields": {
+                "Front": f"<img src='{front_name}'>",
+                "Back": f"<img src='{back_name}'>",
+            },
+            "options": {"allowDuplicate": False},
+            "tags": ["auto"],
+        }
 
-    Parâmetros:
-        front (str): Caminho completo da imagem da frente.
-        back (str): Caminho completo da imagem do verso.
-
-    Comportamento:
-        1. Envia as imagens para o Anki usando "storeMediaFile".
-        2. Cria um flashcard do tipo "Basic" no deck "Default" com as imagens.
-        3. Evita duplicatas e adiciona a tag "auto".
-        4. Imprime o resultado da operação.
-    """
-    front_name = os.path.basename(front)
-    back_name = os.path.basename(back)
-
-    for file in [front, back]:
-        request(
-            "storeMediaFile",
-            filename=os.path.basename(file),
-            data=open(file, "rb").read().decode("latin1")
-        )
-
-    note = {
-        "deckName": "Default",
-        "modelName": "Basic",
-        "fields": {
-            "Front": f"<img src='{front_name}'>",
-            "Back": f"<img src='{back_name}'>"
-        },
-        "options": {"allowDuplicate": False},
-        "tags": ["auto"]
-    }
-
-    result = request("addNote", note=note)
-    print("Enviado:", result)
+        result = self.request("addNote", note=note)
+        print("Enviado:", result)
