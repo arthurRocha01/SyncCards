@@ -1,6 +1,7 @@
 import os
 from datetime import datetime
 from anki_client import send_to_anki
+from logger import logger
 
 class ServiceHandler:
     def extract_date(self, image: str) -> datetime:
@@ -25,5 +26,9 @@ class ServiceHandler:
         ]
 
     def process_file(self, image_pair: list[str]) -> None:
-        renamed_pair = self.rename_images(image_pair)
-        send_to_anki(renamed_pair)
+        if all(os.path.exists(img) for img in image_pair):
+            logger.info(f"Par encontrado: {image_pair[0]} e {image_pair[1]}")
+            front, back = self.rename_images(image_pair)
+            send_to_anki(front, back)
+        else:
+            logger.warning(f"Nenhum par encontrado para")

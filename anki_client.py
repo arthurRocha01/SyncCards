@@ -1,6 +1,7 @@
 import os
 import base64
 import requests
+from logger import logger
 
 ANKI_URL = "http://127.0.0.1:8765"
 
@@ -34,4 +35,8 @@ class AnkiClientHandler:
         }
 
         result = self.request("addNote", note=note)
-        print("Enviado:", result)
+        if "error" in result and result["error"]:
+            logger.error(f"Erro ao enviar note: {result['error']}")
+        else:
+            logger.info(f"Flashcard enviado: {front_name} | {back_name}")
+        print(result)

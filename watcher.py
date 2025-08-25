@@ -2,8 +2,9 @@ import time
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from service import process_file
+from logger import logger
 
-WATCH_PATH = "./inbox"
+WATCH_PATH = "~/anki-flashcards"
 
 class Handler(FileSystemEventHandler):
     def __init__(self):
@@ -17,6 +18,7 @@ class Handler(FileSystemEventHandler):
 
     def process_two_files(self):
         files_pair = self.files_to_process[:2]
+        logger.info(f"Arquivos dectados: {files_pair[0]}, {files_pair[1]}")
         process_file(files_pair)
         self.files_to_process = self.files_to_process[2:]
 
