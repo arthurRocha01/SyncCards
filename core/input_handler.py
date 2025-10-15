@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 DEFAULT_TEMPLATE = [
-    {"titulo": "Exemplo de pergunta", "resposta": "Exemplo de resposta", "tags": ["exemplo"]}
+    {"front": "...", "back": "..."}
 ]
 
 class InputHandler:
