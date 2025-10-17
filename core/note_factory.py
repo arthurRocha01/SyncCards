@@ -8,13 +8,13 @@ class NoteFactory:
             self.notes.append(self._create_single_note(item))
         return self.notes
 
-    def _create_single_note(self, note):
+    def _create_single_note(self, item):
         return {
-            'deckName': ...,
-            'modelName': ...,
+            'deckName': 'Default',
+            'modelName': 'Basic',
             'fields': {
-                'Front': note.get('title', ''),
-                'Back': note.get('answer', '')
+                'Front': item.get('title', ''),
+                'Back': item.get('answer', '')
             },
             'tags': []
         }
