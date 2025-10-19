@@ -1,20 +1,29 @@
 class NoteFactory:
-    def __init__(self, data):
-        self.data = data
+    def __init__(self, data_processed, logger):
+        self.data_processed = data_processed
+        self.logger = logger
         self.notes = []
+        self.logger.info(f"NoteFactory iniciado com {len(data_processed)} item(s) processado(s).")
 
     def create_notes(self):
-        for item in self.data:
-            self.notes.append(self._create_single_note(item))
+        """Cria todas as notas a partir dos dados processados."""
+        for index, item in enumerate(self.data_processed):
+            note = self._create_single_note(item)
+            self.notes.append(note)
+            self.logger.debug(f"Nota {index} criada: Front='{note['fields']['Front']}', Back='{note['fields']['Back']}'")
+        
+        self.logger.info(f"Total de {len(self.notes)} nota(s) criada(s).")
+        self.logger.info(f"Notas criadas: {self.notes}")
         return self.notes
 
     def _create_single_note(self, item):
+        """Cria uma nota individual para o Anki."""
         return {
             'deckName': 'Default',
             'modelName': 'Basic',
             'fields': {
-                'Front': item.get('title', ''),
-                'Back': item.get('answer', '')
+                'Front': item.get('front', ''),
+                'Back': item.get('back', '')
             },
             'tags': []
         }

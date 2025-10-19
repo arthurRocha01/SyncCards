@@ -1,7 +1,7 @@
 import logging
 
 class Logger:
-    def __init__(self, filename='synccards.log', level=logging.DEBUG):
+    def __init__(self, filename='logs/synccards.log', level=logging.DEBUG):
         self.logger = logging.getLogger('SyncCardsLogger')
         self.logger.setLevel(level)
 
@@ -10,7 +10,7 @@ class Logger:
 
     def _create_file_handler(self, filename, level):
         if not self.logger.hasHandlers():
-            handler = logging.FileHandler(self.filename)
+            handler = logging.FileHandler(filename)
             handler.setLevel(level)
 
             formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')

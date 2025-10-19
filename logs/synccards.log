@@ -1,0 +1,30 @@
+2025-10-19 09:57:38,388 - SyncCardsLogger - INFO - InputHandler iniciado com filepath=input/data.json
+2025-10-19 09:57:38,389 - SyncCardsLogger - INFO - Arquivo input/data.json lido com sucesso. 1 item(s) carregado(s).
+2025-10-19 09:57:38,389 - SyncCardsLogger - INFO - Dados coletados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-19 09:57:38,389 - SyncCardsLogger - INFO - Processador iniciado com 1 item(s).
+2025-10-19 09:57:38,389 - SyncCardsLogger - INFO - Processamento concluído: 1 item(s) válidos, 0 item(s) com erros.
+2025-10-19 09:57:38,389 - SyncCardsLogger - INFO - Itens processados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-19 09:57:38,389 - SyncCardsLogger - INFO - NoteFactory iniciado com 1 item(s) processado(s).
+2025-10-19 09:57:38,389 - SyncCardsLogger - DEBUG - Nota 0 criada: Front='Qual a capital da França?', Back='Paris'
+2025-10-19 09:57:38,389 - SyncCardsLogger - INFO - Total de 1 nota(s) criada(s).
+2025-10-19 09:57:38,389 - SyncCardsLogger - INFO - Notas criadas: [{'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}]
+2025-10-19 10:05:37,230 - SyncCardsLogger - INFO - InputHandler iniciado com filepath=input/data.json
+2025-10-19 10:05:37,231 - SyncCardsLogger - INFO - Arquivo input/data.json lido com sucesso. 1 item(s) carregado(s).
+2025-10-19 10:05:37,231 - SyncCardsLogger - INFO - Dados coletados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-19 10:05:37,231 - SyncCardsLogger - INFO - Processador iniciado com 1 item(s).
+2025-10-19 10:05:37,231 - SyncCardsLogger - INFO - Processamento concluído: 1 item(s) válidos, 0 item(s) com erros.
+2025-10-19 10:05:37,231 - SyncCardsLogger - INFO - Itens processados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-19 10:05:37,231 - SyncCardsLogger - INFO - NoteFactory iniciado com 1 item(s) processado(s).
+2025-10-19 10:05:37,232 - SyncCardsLogger - DEBUG - Nota 0 criada: Front='Qual a capital da França?', Back='Paris'
+2025-10-19 10:05:37,232 - SyncCardsLogger - INFO - Total de 1 nota(s) criada(s).
+2025-10-19 10:05:37,232 - SyncCardsLogger - INFO - Notas criadas: [{'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}]
+2025-10-19 10:06:59,103 - SyncCardsLogger - INFO - InputHandler iniciado com filepath=input/data.json
+2025-10-19 10:06:59,103 - SyncCardsLogger - INFO - Arquivo input/data.json lido com sucesso. 1 item(s) carregado(s).
+2025-10-19 10:06:59,103 - SyncCardsLogger - INFO - Dados coletados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-19 10:06:59,104 - SyncCardsLogger - INFO - Processador iniciado com 1 item(s).
+2025-10-19 10:06:59,104 - SyncCardsLogger - INFO - Processamento concluído: 1 item(s) válidos, 0 item(s) com erros.
+2025-10-19 10:06:59,104 - SyncCardsLogger - INFO - Itens processados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-19 10:06:59,104 - SyncCardsLogger - INFO - NoteFactory iniciado com 1 item(s) processado(s).
+2025-10-19 10:06:59,104 - SyncCardsLogger - DEBUG - Nota 0 criada: Front='Qual a capital da França?', Back='Paris'
+2025-10-19 10:06:59,104 - SyncCardsLogger - INFO - Total de 1 nota(s) criada(s).
+2025-10-19 10:06:59,104 - SyncCardsLogger - INFO - Notas criadas: [{'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}]
