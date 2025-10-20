@@ -28,3 +28,171 @@
 2025-10-19 10:06:59,104 - SyncCardsLogger - DEBUG - Nota 0 criada: Front='Qual a capital da França?', Back='Paris'
 2025-10-19 10:06:59,104 - SyncCardsLogger - INFO - Total de 1 nota(s) criada(s).
 2025-10-19 10:06:59,104 - SyncCardsLogger - INFO - Notas criadas: [{'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}]
+2025-10-20 10:28:16,490 - SyncCardsLogger - INFO - InputHandler iniciado com filepath=input/data.json
+2025-10-20 10:28:16,490 - SyncCardsLogger - INFO - Arquivo input/data.json lido com sucesso. 1 item(s) carregado(s).
+2025-10-20 10:28:16,490 - SyncCardsLogger - INFO - Dados coletados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-20 10:28:16,490 - SyncCardsLogger - INFO - Processador iniciado com 1 item(s).
+2025-10-20 10:28:16,490 - SyncCardsLogger - INFO - Processamento concluído: 1 item(s) válidos, 0 item(s) com erros.
+2025-10-20 10:28:16,491 - SyncCardsLogger - INFO - Itens processados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-20 10:28:16,491 - SyncCardsLogger - INFO - NoteFactory iniciado com 1 item(s) processado(s).
+2025-10-20 10:28:16,491 - SyncCardsLogger - DEBUG - Nota 0 criada: Front='Qual a capital da França?', Back='Paris'
+2025-10-20 10:28:16,491 - SyncCardsLogger - INFO - Total de 1 nota(s) criada(s).
+2025-10-20 10:28:16,491 - SyncCardsLogger - INFO - Notas criadas: [{'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}]
+2025-10-20 10:28:16,491 - SyncCardsLogger - INFO - ModelBuilder iniciado com 1 nota(s).
+2025-10-20 10:28:16,491 - SyncCardsLogger - DEBUG - Modelo 0 criado para nota: Front='Qual a capital da França?', Back='Paris'
+2025-10-20 10:28:16,491 - SyncCardsLogger - INFO - Total de 1 modelo(s) criado(s).
+2025-10-20 10:28:16,491 - SyncCardsLogger - INFO - Modelos criados: [{'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}]
+2025-10-20 10:41:13,888 - SyncCardsLogger - INFO - InputHandler iniciado com filepath=input/data.json
+2025-10-20 10:41:13,889 - SyncCardsLogger - INFO - Arquivo input/data.json lido com sucesso. 1 item(s) carregado(s).
+2025-10-20 10:41:13,889 - SyncCardsLogger - INFO - Dados coletados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-20 10:41:13,889 - SyncCardsLogger - INFO - Processador iniciado com 1 item(s).
+2025-10-20 10:41:13,889 - SyncCardsLogger - INFO - Processamento concluído: 1 item(s) válidos, 0 item(s) com erros.
+2025-10-20 10:41:13,889 - SyncCardsLogger - INFO - Itens processados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-20 10:41:13,889 - SyncCardsLogger - INFO - NoteFactory iniciado com 1 item(s) processado(s).
+2025-10-20 10:41:13,889 - SyncCardsLogger - DEBUG - Nota 0 criada: Front='Qual a capital da França?', Back='Paris'
+2025-10-20 10:41:13,889 - SyncCardsLogger - INFO - Total de 1 nota(s) criada(s).
+2025-10-20 10:41:13,889 - SyncCardsLogger - INFO - Notas criadas: [{'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}]
+2025-10-20 10:41:13,889 - SyncCardsLogger - INFO - ModelBuilder iniciado com 1 nota(s).
+2025-10-20 10:41:13,889 - SyncCardsLogger - DEBUG - Modelo 0 criado para nota: Front='Qual a capital da França?', Back='Paris'
+2025-10-20 10:41:13,889 - SyncCardsLogger - INFO - Total de 1 modelo(s) criado(s).
+2025-10-20 10:41:13,889 - SyncCardsLogger - INFO - Modelos criados: [{'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}]
+2025-10-20 10:41:13,889 - SyncCardsLogger - INFO - AnkiService iniciado com 1 modelo(s).
+2025-10-20 10:41:13,890 - SyncCardsLogger - INFO - Iniciando envio de 1 modelo(s) para o AnkiConnect.
+2025-10-20 10:41:13,890 - SyncCardsLogger - DEBUG - Enviando modelo 1/1: {'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}
+2025-10-20 10:41:13,890 - SyncCardsLogger - DEBUG - POST para http://localhost:8080 com payload: {'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}
+2025-10-20 10:41:13,899 - SyncCardsLogger - ERROR - Erro ao enviar modelo para AnkiConnect: 501 Server Error: Unsupported method ('POST') for url: http://localhost:8080/
+2025-10-20 10:41:13,899 - SyncCardsLogger - DEBUG - Resposta do modelo 1: {'error': "501 Server Error: Unsupported method ('POST') for url: http://localhost:8080/"}
+2025-10-20 10:41:13,899 - SyncCardsLogger - INFO - Envio concluído. 1 resposta(s) recebida(s).
+2025-10-20 10:41:13,899 - SyncCardsLogger - INFO - Resultados finais: [{'error': "501 Server Error: Unsupported method ('POST') for url: http://localhost:8080/"}]
+2025-10-20 10:54:51,845 - SyncCardsLogger - INFO - InputHandler iniciado com filepath=input/data.json
+2025-10-20 10:54:51,850 - SyncCardsLogger - INFO - Arquivo input/data.json lido com sucesso. 1 item(s) carregado(s).
+2025-10-20 10:54:51,851 - SyncCardsLogger - INFO - Dados coletados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-20 10:54:51,851 - SyncCardsLogger - INFO - Processador iniciado com 1 item(s).
+2025-10-20 10:54:51,851 - SyncCardsLogger - INFO - Processamento concluído: 1 item(s) válidos, 0 item(s) com erros.
+2025-10-20 10:54:51,851 - SyncCardsLogger - INFO - Itens processados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-20 10:54:51,851 - SyncCardsLogger - INFO - NoteFactory iniciado com 1 item(s) processado(s).
+2025-10-20 10:54:51,852 - SyncCardsLogger - DEBUG - Nota 0 criada: Front='Qual a capital da França?', Back='Paris'
+2025-10-20 10:54:51,852 - SyncCardsLogger - INFO - Total de 1 nota(s) criada(s).
+2025-10-20 10:54:51,852 - SyncCardsLogger - INFO - Notas criadas: [{'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}]
+2025-10-20 10:54:51,852 - SyncCardsLogger - INFO - ModelBuilder iniciado com 1 nota(s).
+2025-10-20 10:54:51,852 - SyncCardsLogger - DEBUG - Modelo 0 criado para nota: Front='Qual a capital da França?', Back='Paris'
+2025-10-20 10:54:51,852 - SyncCardsLogger - INFO - Total de 1 modelo(s) criado(s).
+2025-10-20 10:54:51,852 - SyncCardsLogger - INFO - Modelos criados: [{'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}]
+2025-10-20 10:54:51,852 - SyncCardsLogger - INFO - AnkiService iniciado com 1 modelo(s).
+2025-10-20 10:54:51,852 - SyncCardsLogger - INFO - Iniciando envio de 1 modelo(s) para o AnkiConnect.
+2025-10-20 10:54:51,852 - SyncCardsLogger - DEBUG - Enviando modelo 1/1: {'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}
+2025-10-20 10:54:51,852 - SyncCardsLogger - DEBUG - POST para http://127.0.0.1:5000 com payload: {'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}
+2025-10-20 10:54:51,861 - SyncCardsLogger - ERROR - Erro ao enviar modelo para AnkiConnect: 405 Client Error: METHOD NOT ALLOWED for url: http://127.0.0.1:5000/
+2025-10-20 10:54:51,861 - SyncCardsLogger - DEBUG - Resposta do modelo 1: {'error': '405 Client Error: METHOD NOT ALLOWED for url: http://127.0.0.1:5000/'}
+2025-10-20 10:54:51,862 - SyncCardsLogger - INFO - Envio concluído. 1 resposta(s) recebida(s).
+2025-10-20 10:54:51,862 - SyncCardsLogger - INFO - Resultados finais: [{'error': '405 Client Error: METHOD NOT ALLOWED for url: http://127.0.0.1:5000/'}]
+2025-10-20 10:58:56,448 - SyncCardsLogger - INFO - InputHandler iniciado com filepath=input/data.json
+2025-10-20 10:58:56,448 - SyncCardsLogger - INFO - Arquivo input/data.json lido com sucesso. 1 item(s) carregado(s).
+2025-10-20 10:58:56,449 - SyncCardsLogger - INFO - Dados coletados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-20 10:58:56,449 - SyncCardsLogger - INFO - Processador iniciado com 1 item(s).
+2025-10-20 10:58:56,449 - SyncCardsLogger - INFO - Processamento concluído: 1 item(s) válidos, 0 item(s) com erros.
+2025-10-20 10:58:56,449 - SyncCardsLogger - INFO - Itens processados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-20 10:58:56,449 - SyncCardsLogger - INFO - NoteFactory iniciado com 1 item(s) processado(s).
+2025-10-20 10:58:56,449 - SyncCardsLogger - DEBUG - Nota 0 criada: Front='Qual a capital da França?', Back='Paris'
+2025-10-20 10:58:56,449 - SyncCardsLogger - INFO - Total de 1 nota(s) criada(s).
+2025-10-20 10:58:56,449 - SyncCardsLogger - INFO - Notas criadas: [{'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}]
+2025-10-20 10:58:56,449 - SyncCardsLogger - INFO - ModelBuilder iniciado com 1 nota(s).
+2025-10-20 10:58:56,449 - SyncCardsLogger - DEBUG - Modelo 0 criado para nota: Front='Qual a capital da França?', Back='Paris'
+2025-10-20 10:58:56,449 - SyncCardsLogger - INFO - Total de 1 modelo(s) criado(s).
+2025-10-20 10:58:56,449 - SyncCardsLogger - INFO - Modelos criados: [{'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}]
+2025-10-20 10:58:56,449 - SyncCardsLogger - INFO - AnkiService iniciado com 1 modelo(s).
+2025-10-20 10:58:56,449 - SyncCardsLogger - INFO - Iniciando envio de 1 modelo(s) para o AnkiConnect.
+2025-10-20 10:58:56,449 - SyncCardsLogger - DEBUG - Enviando modelo 1/1: {'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}
+2025-10-20 10:58:56,450 - SyncCardsLogger - DEBUG - POST para http://127.0.0.1:5000/test com payload: {'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}
+2025-10-20 10:58:56,455 - SyncCardsLogger - INFO - Resposta do AnkiConnect recebida: {'received': {'action': 'addNote', 'params': {'note': {'deckName': 'Default', 'fields': {'Back': 'Paris', 'Front': 'Qual a capital da França?'}, 'modelName': 'Basic', 'tags': []}}, 'version': 6}}
+2025-10-20 10:58:56,457 - SyncCardsLogger - DEBUG - Resposta do modelo 1: {'received': {'action': 'addNote', 'params': {'note': {'deckName': 'Default', 'fields': {'Back': 'Paris', 'Front': 'Qual a capital da França?'}, 'modelName': 'Basic', 'tags': []}}, 'version': 6}}
+2025-10-20 10:58:56,457 - SyncCardsLogger - INFO - Envio concluído. 1 resposta(s) recebida(s).
+2025-10-20 10:58:56,457 - SyncCardsLogger - INFO - Resultados finais: [{'received': {'action': 'addNote', 'params': {'note': {'deckName': 'Default', 'fields': {'Back': 'Paris', 'Front': 'Qual a capital da França?'}, 'modelName': 'Basic', 'tags': []}}, 'version': 6}}]
+2025-10-20 10:59:42,792 - SyncCardsLogger - INFO - InputHandler iniciado com filepath=input/data.json
+2025-10-20 10:59:42,792 - SyncCardsLogger - INFO - Arquivo input/data.json lido com sucesso. 1 item(s) carregado(s).
+2025-10-20 10:59:42,792 - SyncCardsLogger - INFO - Dados coletados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-20 10:59:42,792 - SyncCardsLogger - INFO - Processador iniciado com 1 item(s).
+2025-10-20 10:59:42,793 - SyncCardsLogger - INFO - Processamento concluído: 1 item(s) válidos, 0 item(s) com erros.
+2025-10-20 10:59:42,793 - SyncCardsLogger - INFO - Itens processados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-20 10:59:42,793 - SyncCardsLogger - INFO - NoteFactory iniciado com 1 item(s) processado(s).
+2025-10-20 10:59:42,793 - SyncCardsLogger - DEBUG - Nota 0 criada: Front='Qual a capital da França?', Back='Paris'
+2025-10-20 10:59:42,793 - SyncCardsLogger - INFO - Total de 1 nota(s) criada(s).
+2025-10-20 10:59:42,793 - SyncCardsLogger - INFO - Notas criadas: [{'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}]
+2025-10-20 10:59:42,793 - SyncCardsLogger - INFO - ModelBuilder iniciado com 1 nota(s).
+2025-10-20 10:59:42,794 - SyncCardsLogger - DEBUG - Modelo 0 criado para nota: Front='Qual a capital da França?', Back='Paris'
+2025-10-20 10:59:42,794 - SyncCardsLogger - INFO - Total de 1 modelo(s) criado(s).
+2025-10-20 10:59:42,794 - SyncCardsLogger - INFO - Modelos criados: [{'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}]
+2025-10-20 10:59:42,794 - SyncCardsLogger - INFO - AnkiService iniciado com 1 modelo(s).
+2025-10-20 10:59:42,794 - SyncCardsLogger - INFO - Iniciando envio de 1 modelo(s) para o AnkiConnect.
+2025-10-20 10:59:42,794 - SyncCardsLogger - DEBUG - Enviando modelo 1/1: {'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}
+2025-10-20 10:59:42,794 - SyncCardsLogger - DEBUG - POST para http://127.0.0.1:5000/test com payload: {'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}
+2025-10-20 10:59:42,800 - SyncCardsLogger - INFO - Resposta do AnkiConnect recebida: {'received': {'action': 'addNote', 'params': {'note': {'deckName': 'Default', 'fields': {'Back': 'Paris', 'Front': 'Qual a capital da França?'}, 'modelName': 'Basic', 'tags': []}}, 'version': 6}}
+2025-10-20 10:59:42,801 - SyncCardsLogger - DEBUG - Resposta do modelo 1: {'received': {'action': 'addNote', 'params': {'note': {'deckName': 'Default', 'fields': {'Back': 'Paris', 'Front': 'Qual a capital da França?'}, 'modelName': 'Basic', 'tags': []}}, 'version': 6}}
+2025-10-20 10:59:42,801 - SyncCardsLogger - INFO - Envio concluído. 1 resposta(s) recebida(s).
+2025-10-20 10:59:42,801 - SyncCardsLogger - INFO - Resultados finais: [{'received': {'action': 'addNote', 'params': {'note': {'deckName': 'Default', 'fields': {'Back': 'Paris', 'Front': 'Qual a capital da França?'}, 'modelName': 'Basic', 'tags': []}}, 'version': 6}}]
+2025-10-20 11:01:24,354 - SyncCardsLogger - INFO - InputHandler iniciado com filepath=input/data.json
+2025-10-20 11:01:24,354 - SyncCardsLogger - INFO - Arquivo input/data.json lido com sucesso. 1 item(s) carregado(s).
+2025-10-20 11:01:24,354 - SyncCardsLogger - INFO - Dados coletados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-20 11:01:24,354 - SyncCardsLogger - INFO - Processador iniciado com 1 item(s).
+2025-10-20 11:01:24,354 - SyncCardsLogger - INFO - Processamento concluído: 1 item(s) válidos, 0 item(s) com erros.
+2025-10-20 11:01:24,355 - SyncCardsLogger - INFO - Itens processados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-20 11:01:24,355 - SyncCardsLogger - INFO - NoteFactory iniciado com 1 item(s) processado(s).
+2025-10-20 11:01:24,355 - SyncCardsLogger - DEBUG - Nota 0 criada: Front='Qual a capital da França?', Back='Paris'
+2025-10-20 11:01:24,355 - SyncCardsLogger - INFO - Total de 1 nota(s) criada(s).
+2025-10-20 11:01:24,355 - SyncCardsLogger - INFO - Notas criadas: [{'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}]
+2025-10-20 11:01:24,355 - SyncCardsLogger - INFO - ModelBuilder iniciado com 1 nota(s).
+2025-10-20 11:01:24,355 - SyncCardsLogger - DEBUG - Modelo 0 criado para nota: Front='Qual a capital da França?', Back='Paris'
+2025-10-20 11:01:24,356 - SyncCardsLogger - INFO - Total de 1 modelo(s) criado(s).
+2025-10-20 11:01:24,356 - SyncCardsLogger - INFO - Modelos criados: [{'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}]
+2025-10-20 11:01:24,356 - SyncCardsLogger - INFO - AnkiService iniciado com 1 modelo(s).
+2025-10-20 11:01:24,356 - SyncCardsLogger - INFO - Iniciando envio de 1 modelo(s) para o AnkiConnect.
+2025-10-20 11:01:24,356 - SyncCardsLogger - DEBUG - Enviando modelo 1/1: {'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}
+2025-10-20 11:01:24,356 - SyncCardsLogger - DEBUG - POST para http://127.0.0.1:5000/test com payload: {'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}
+2025-10-20 11:01:24,365 - SyncCardsLogger - INFO - Resposta do AnkiConnect recebida: {'received_data': {'action': 'addNote', 'params': {'note': {'deckName': 'Default', 'fields': {'Back': 'Paris', 'Front': 'Qual a capital da França?'}, 'modelName': 'Basic', 'tags': []}}, 'version': 6}, 'received_headers': {'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive', 'Content-Length': '186', 'Content-Type': 'application/json', 'Host': '127.0.0.1:5000', 'User-Agent': 'python-requests/2.32.5'}}
+2025-10-20 11:01:24,365 - SyncCardsLogger - DEBUG - Resposta do modelo 1: {'received_data': {'action': 'addNote', 'params': {'note': {'deckName': 'Default', 'fields': {'Back': 'Paris', 'Front': 'Qual a capital da França?'}, 'modelName': 'Basic', 'tags': []}}, 'version': 6}, 'received_headers': {'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive', 'Content-Length': '186', 'Content-Type': 'application/json', 'Host': '127.0.0.1:5000', 'User-Agent': 'python-requests/2.32.5'}}
+2025-10-20 11:01:24,365 - SyncCardsLogger - INFO - Envio concluído. 1 resposta(s) recebida(s).
+2025-10-20 11:01:24,365 - SyncCardsLogger - INFO - Resultados finais: [{'received_data': {'action': 'addNote', 'params': {'note': {'deckName': 'Default', 'fields': {'Back': 'Paris', 'Front': 'Qual a capital da França?'}, 'modelName': 'Basic', 'tags': []}}, 'version': 6}, 'received_headers': {'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Connection': 'keep-alive', 'Content-Length': '186', 'Content-Type': 'application/json', 'Host': '127.0.0.1:5000', 'User-Agent': 'python-requests/2.32.5'}}]
+2025-10-20 11:05:07,080 - SyncCardsLogger - INFO - InputHandler iniciado com filepath=input/data.json
+2025-10-20 11:05:07,081 - SyncCardsLogger - INFO - Arquivo input/data.json lido com sucesso. 1 item(s) carregado(s).
+2025-10-20 11:05:07,081 - SyncCardsLogger - INFO - Dados coletados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-20 11:05:07,081 - SyncCardsLogger - INFO - Processador iniciado com 1 item(s).
+2025-10-20 11:05:07,081 - SyncCardsLogger - INFO - Processamento concluído: 1 item(s) válidos, 0 item(s) com erros.
+2025-10-20 11:05:07,081 - SyncCardsLogger - INFO - Itens processados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-20 11:05:07,081 - SyncCardsLogger - INFO - NoteFactory iniciado com 1 item(s) processado(s).
+2025-10-20 11:05:07,081 - SyncCardsLogger - DEBUG - Nota 0 criada: Front='Qual a capital da França?', Back='Paris'
+2025-10-20 11:05:07,081 - SyncCardsLogger - INFO - Total de 1 nota(s) criada(s).
+2025-10-20 11:05:07,081 - SyncCardsLogger - INFO - Notas criadas: [{'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}]
+2025-10-20 11:05:07,081 - SyncCardsLogger - INFO - ModelBuilder iniciado com 1 nota(s).
+2025-10-20 11:05:07,081 - SyncCardsLogger - DEBUG - Modelo 0 criado para nota: Front='Qual a capital da França?', Back='Paris'
+2025-10-20 11:05:07,081 - SyncCardsLogger - INFO - Total de 1 modelo(s) criado(s).
+2025-10-20 11:05:07,081 - SyncCardsLogger - INFO - Modelos criados: [{'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}]
+2025-10-20 11:05:07,081 - SyncCardsLogger - INFO - AnkiService iniciado com 1 modelo(s).
+2025-10-20 11:05:07,081 - SyncCardsLogger - INFO - Iniciando envio de 1 modelo(s) para o AnkiConnect.
+2025-10-20 11:05:07,082 - SyncCardsLogger - DEBUG - Enviando modelo 1/1: {'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}
+2025-10-20 11:05:07,082 - SyncCardsLogger - DEBUG - POST para http://127.0.0.1:5000/test com payload: {'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}
+2025-10-20 11:05:07,089 - SyncCardsLogger - ERROR - Erro ao enviar modelo para AnkiConnect: Expecting value: line 1 column 1 (char 0)
+2025-10-20 11:05:07,089 - SyncCardsLogger - DEBUG - Resposta do modelo 1: {'error': 'Expecting value: line 1 column 1 (char 0)'}
+2025-10-20 11:05:07,089 - SyncCardsLogger - INFO - Envio concluído. 1 resposta(s) recebida(s).
+2025-10-20 11:05:07,089 - SyncCardsLogger - INFO - Resultados finais: [{'error': 'Expecting value: line 1 column 1 (char 0)'}]
+2025-10-20 11:05:16,524 - SyncCardsLogger - INFO - InputHandler iniciado com filepath=input/data.json
+2025-10-20 11:05:16,525 - SyncCardsLogger - INFO - Arquivo input/data.json lido com sucesso. 1 item(s) carregado(s).
+2025-10-20 11:05:16,525 - SyncCardsLogger - INFO - Dados coletados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-20 11:05:16,525 - SyncCardsLogger - INFO - Processador iniciado com 1 item(s).
+2025-10-20 11:05:16,525 - SyncCardsLogger - INFO - Processamento concluído: 1 item(s) válidos, 0 item(s) com erros.
+2025-10-20 11:05:16,525 - SyncCardsLogger - INFO - Itens processados: [{'front': 'Qual a capital da França?', 'back': 'Paris'}]
+2025-10-20 11:05:16,525 - SyncCardsLogger - INFO - NoteFactory iniciado com 1 item(s) processado(s).
+2025-10-20 11:05:16,525 - SyncCardsLogger - DEBUG - Nota 0 criada: Front='Qual a capital da França?', Back='Paris'
+2025-10-20 11:05:16,525 - SyncCardsLogger - INFO - Total de 1 nota(s) criada(s).
+2025-10-20 11:05:16,525 - SyncCardsLogger - INFO - Notas criadas: [{'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}]
+2025-10-20 11:05:16,525 - SyncCardsLogger - INFO - ModelBuilder iniciado com 1 nota(s).
+2025-10-20 11:05:16,525 - SyncCardsLogger - DEBUG - Modelo 0 criado para nota: Front='Qual a capital da França?', Back='Paris'
+2025-10-20 11:05:16,525 - SyncCardsLogger - INFO - Total de 1 modelo(s) criado(s).
+2025-10-20 11:05:16,525 - SyncCardsLogger - INFO - Modelos criados: [{'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}]
+2025-10-20 11:05:16,525 - SyncCardsLogger - INFO - AnkiService iniciado com 1 modelo(s).
+2025-10-20 11:05:16,526 - SyncCardsLogger - INFO - Iniciando envio de 1 modelo(s) para o AnkiConnect.
+2025-10-20 11:05:16,526 - SyncCardsLogger - DEBUG - Enviando modelo 1/1: {'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}
+2025-10-20 11:05:16,526 - SyncCardsLogger - DEBUG - POST para http://127.0.0.1:5000/test com payload: {'action': 'addNote', 'version': 6, 'params': {'note': {'deckName': 'Default', 'modelName': 'Basic', 'fields': {'Front': 'Qual a capital da França?', 'Back': 'Paris'}, 'tags': []}}}
+2025-10-20 11:05:16,532 - SyncCardsLogger - ERROR - Erro ao enviar modelo para AnkiConnect: Expecting value: line 1 column 1 (char 0)
+2025-10-20 11:05:16,532 - SyncCardsLogger - DEBUG - Resposta do modelo 1: {'error': 'Expecting value: line 1 column 1 (char 0)'}
+2025-10-20 11:05:16,532 - SyncCardsLogger - INFO - Envio concluído. 1 resposta(s) recebida(s).
+2025-10-20 11:05:16,532 - SyncCardsLogger - INFO - Resultados finais: [{'error': 'Expecting value: line 1 column 1 (char 0)'}]
