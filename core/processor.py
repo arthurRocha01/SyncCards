@@ -1,6 +1,6 @@
 import re
 
-REQUIRED_FIELDS = ["front", "back"]
+REQUIRED_FIELDS = ["frente", "verso"]
 FORMAT_PATTERN = re.compile(r'[\x00-\x08\x0B-\x0C\x0E-\x1F]')
 
 class ProcessorHandler:

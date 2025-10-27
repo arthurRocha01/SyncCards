@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 DEFAULT_TEMPLATE = [
-    {"front": "...", "back": "..."}
+    {"frente": "...", "verso": "..."}
 ]
 
 class InputHandler:

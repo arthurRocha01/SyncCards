@@ -26,7 +26,7 @@ def main():
     models = model_builder.build_models()
     print(f'Modelos construídos: {models}\n')
 
-    anki_service = AnkiService(models, logger, 'http://127.0.0.1:5000/test')
+    anki_service = AnkiService(models, logger, 'http://127.0.0.1:8765')
     responses = anki_service.add_models_to_anki()
     print(f'Respostas do AnkiConnect: {responses}\n')
     

@@ -12,7 +12,7 @@ class AnkiService:
         total = len(self.models)
         self.logger.info(f"Iniciando envio de {total} modelo(s) para o AnkiConnect.")
 
-        results = []
+        results = [] 
         for index, model in enumerate(self.models):
             self.logger.debug(f"Enviando modelo {index + 1}/{total}: {model}")
             response = self._add_single_model_to_anki(model)

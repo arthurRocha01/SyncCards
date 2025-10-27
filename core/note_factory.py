@@ -10,7 +10,7 @@ class NoteFactory:
         for index, item in enumerate(self.data_processed):
             note = self._create_single_note(item)
             self.notes.append(note)
-            self.logger.debug(f"Nota {index} criada: Front='{note['fields']['Front']}', Back='{note['fields']['Back']}'")
+            self.logger.debug(f"Nota {index} criada: Frente='{note['fields']['Frente']}', Verso='{note['fields']['Verso']}'")
         
         self.logger.info(f"Total de {len(self.notes)} nota(s) criada(s).")
         self.logger.info(f"Notas criadas: {self.notes}")
@@ -19,11 +19,11 @@ class NoteFactory:
     def _create_single_note(self, item):
         """Cria uma nota individual para o Anki."""
         return {
-            'deckName': 'Default',
-            'modelName': 'Basic',
+            'deckName': 'teste',
+            'modelName': 'Básico',
             'fields': {
-                'Front': item.get('front', ''),
-                'Back': item.get('back', '')
+                'Frente': item.get('frente', ''),
+                'Verso': item.get('verso', '')
             },
             'tags': []
         }

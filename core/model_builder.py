@@ -11,7 +11,7 @@ class ModelBuilder:
             model = self._build_single_model(note)
             models.append(model)
             self.logger.debug(
-                f"Modelo {index} criado para nota: Front='{note['fields']['Front']}', Back='{note['fields']['Back']}'"
+                f"Modelo {index} criado para nota: Frente='{note['fields']['Frente']}', Verso='{note['fields']['Verso']}'"
             )
         
         self.logger.info(f"Total de {len(models)} modelo(s) criado(s).")

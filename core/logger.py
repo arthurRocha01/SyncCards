@@ -14,7 +14,7 @@ class Logger:
             handler.setLevel(level)
 
             formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-            handler.setFormatter(formatter)
+            handler.setFormatter(formatter) 
             self.logger.addHandler(handler)
 
     def get_logger(self):
